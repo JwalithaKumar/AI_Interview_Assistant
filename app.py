@@ -13,7 +13,7 @@ except (KeyError, FileNotFoundError):
 
 role = st.selectbox('Job role', ['Python Developer', 'Data Analyst', 'Java Developer', 'Machine Learning Engineer', 'Software Engineer', 'HR Executive', 'Other'])
 if role == 'Other':
-    role = st.text_input('Enter job role', 'Business Analyst')
+    role = st.text_input('Enter job role', '-----------')
 level = st.selectbox('Difficulty', ['Beginner', 'Intermediate', 'Advanced'])
 model = st.selectbox('Groq model', ['openai/gpt-oss-120b', 'openai/gpt-oss-20b'])
 mode = st.radio('Activity', ['Generate Interview Questions', 'Evaluate Answers', 'Generate Coding Questions', 'Improve My Answer'])
